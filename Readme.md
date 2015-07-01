@@ -38,7 +38,7 @@ blinding projection to produce a more ergonomic viewing while retaining high
 contrast, so that what's being projected is still readable. 
 ```
 mask = ShapeMask(thresh=160, minarea=0.005).blur(1.5)
-Overlay(invert, mask = mask)
+Overlay(Invert, mask=mask)
 ```
 Output: 
 
@@ -48,12 +48,12 @@ Output:
 the above example script.*
 
 ## Why
-I created this because I watch talks a lot of recorded talks and webinars, but
+Created this because I watch a lot of recorded talks and webinars, but
 my eyes can't stand looking into a light bulb for an hour straight.
 
 ## License
 Same base license as AviSynth; GNU GPL v2 or later.  
-The included OpenCV files (in the cv directory) are licensed under BSD 3 clause.
+The included OpenCV files (in the cv directory) are licensed under 3 clause BSD.
 
 ## Contribute
 Fork it, hack away and send a pull request.
