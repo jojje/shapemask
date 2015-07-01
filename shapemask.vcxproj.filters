@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="cv">
+      <UniqueIdentifier>{d3ac2699-466b-4c16-9550-c4ade7ab94e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cv\modules">
+      <UniqueIdentifier>{13d5ece9-118d-4748-bc3b-dcf8642a1839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cv\modules\imgproc">
+      <UniqueIdentifier>{cfcf41c2-9b80-48d7-a1dd-a96ff4d76fc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cv\modules\core">
+      <UniqueIdentifier>{80efda69-9148-4cb0-8aad-6820d9ebeef7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cv\modules\hal">
+      <UniqueIdentifier>{d3565e79-485e-47a3-9aa0-6ba3ed6a8b90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cv\include">
+      <UniqueIdentifier>{bb1e5554-55e0-4293-830b-664383f239c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cv\include\opencv2">
+      <UniqueIdentifier>{baa3f7cb-b7e4-4ee7-b959-3cdb36e5dfdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cv\include\opencv2\imgproc">
+      <UniqueIdentifier>{1b0b45a9-e432-4990-b58a-c709d44b7f8e}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="frame_process.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="avisynth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cv\include\opencv2\imgproc\imgproc_c.h">
+      <Filter>cv\include\opencv2\imgproc</Filter>
+    </ClInclude>
+    <ClInclude Include="cv\include\opencv2\imgproc\types_c.h">
+      <Filter>cv\include\opencv2\imgproc</Filter>
+    </ClInclude>
+    <ClInclude Include="cv\include\opencv2\core.hpp">
+      <Filter>cv\include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="cv\include\opencv2\cvconfig.h">
+      <Filter>cv\include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="cv\include\opencv2\hal.hpp">
+      <Filter>cv\include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="cv\include\opencv2\imgproc.hpp">
+      <Filter>cv\include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="cv\include\opencv2\opencv.hpp">
+      <Filter>cv\include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="cv\include\opencv2\opencv_modules.hpp">
+      <Filter>cv\include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="shapemask.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="frame_process.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\matrix.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\system.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\imgproc\shapedescr.cpp">
+      <Filter>cv\modules\imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\imgproc\contours.cpp">
+      <Filter>cv\modules\imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\imgproc\imgproc_tables.cpp">
+      <Filter>cv\modules\imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\imgproc\imgproc_utils.cpp">
+      <Filter>cv\modules\imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\imgproc\thresh.cpp">
+      <Filter>cv\modules\imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\alloc.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\array.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\copy.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\datastructs.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\kmeans.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\mathfuncs.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\parallel.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\rand.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\stat.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\stl.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\tables.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\umatrix.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\hal\hal_mathfuncs.cpp">
+      <Filter>cv\modules\hal</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\hal\hal_matrix.cpp">
+      <Filter>cv\modules\hal</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\hal\hal_stat.cpp">
+      <Filter>cv\modules\hal</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\imgproc\approx.cpp">
+      <Filter>cv\modules\imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\persistence.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\imgproc\drawing.cpp">
+      <Filter>cv\modules\imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\arithm.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\convert.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\lapack.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\matmul.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\matop.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\core\pca.cpp">
+      <Filter>cv\modules\core</Filter>
+    </ClCompile>
+    <ClCompile Include="cv\modules\imgproc\color.cpp">
+      <Filter>cv\modules\imgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="shapemask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="info.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
