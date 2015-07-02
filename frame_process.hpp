@@ -27,7 +27,7 @@ enum COLOR_SPACE { RGB24, RGB32, YUV2, YV12 };
  * width:      image width (number of columns/bytes per color)
  * height:     image height (number of rows)
  * pitch:      width + some offset the image producing library adds for its deemed efficiency.
- * colorspace: bits per pixel
+ * colorspace: one of the COLOR_SPACE values denoting which color space is used for the frame.
  * threshold:  luminence equal or above which pixels will be retained (white) in the mask and below will be masked out.
  * minarea:    The minimal area an identified shape must have to be regarded as a valid shape of interest, and be included in the visible mask (painted white).
  * rectonly:   Whether or not to only consider shapes that are rectangular (have corners at 90 deg angle, +- 1 degree)
