@@ -53,13 +53,12 @@ PVideoFrame __stdcall ShapeMask::GetFrame(int n, IScriptEnvironment* env) {
 	// No change to the source pixels in the process steps, so ok to cast to non-const
 	// returns a 1 channel gray scale image which needs to be converted to whatever format the source clip is in.
 	retp = process_frame((uchar*)srcp, vi.width, vi.height, src_pitch, colorspace, threshold, minarea, rectonly);
-	if (retp == 0) raiseError(env, "Unsupported color space, must be one of RGB24, RGB32, YUV2 or YV12");
 
 	if (vi.IsPlanar()) copyPlanar(retp, dst, bpp);
 	else if (vi.IsYUY2()) copyYUY2(retp, dst);
 	else copyRGB(retp, dst, bpp);
 
-    delete retp;
+	delete retp;
 	return dst;
 }
 
