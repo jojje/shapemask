@@ -75,9 +75,9 @@ ShapeMask::~ShapeMask() {}
 
 AVSValue __cdecl Create_ShapeMask(AVSValue args, void* user_data, IScriptEnvironment* env) {
 	return new ShapeMask(args[0].AsClip(),
-		args[1].AsInt(127),         // threshold parameter
-		args[2].AsFloat(0.02),      // minarea parameter
-		args[3].AsBool(false),      // rectonly parameter
+		args[1].AsInt(127),            // threshold parameter
+		(float)args[2].AsFloat(0.02),  // minarea parameter
+		args[3].AsBool(false),         // rectonly parameter
 		env);
 }
 

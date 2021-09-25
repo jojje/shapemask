@@ -25,12 +25,12 @@
 
 #include "avisynth/avisynth.h"
 
-#define VERSION "1.0"
+#define VERSION "1.0.1"
 
 class ShapeMask : public GenericVideoFilter {
 	int   threshold;          // The luma threshold (0-255) above which pixels must be to be considered members of a shape candidate.
 	float minarea;            // Smallest area that a feature in the picture has to have in order to be considered a viable shape. If <= 1 then it's taken as a percentage of the entire image area, else as the area in pixels.
-	bool  rectonly;           // Whether or not to only consider rectangular shapes for darkening (true|false).
+	bool  rectonly;           // Whether or not to only consider rectangular shapes to include in the shape mask (true|false).
 public:
 	ShapeMask(PClip _child, int thresh, float minarea, bool rectonly, IScriptEnvironment* env);
 	~ShapeMask();
