@@ -38,18 +38,22 @@ void create_mask(Mat &gray, Mat &mask, int thresh, float minarea, bool rectonly)
 	if (minarea <= 1) minarea = minarea * imgarea;
 
 	threshold(gray, binary, thresh, 255, THRESH_BINARY);
-	findContours(binary, contours, hierarchy, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE, Point(0, 0));
+	findContours(binary, contours, hierarchy, RETR_TREE, CHAIN_APPROX_SIMPLE, Point(0, 0));
+	
+	if (contours.size() == 0) return;              // no contours found
 
 	for (vector<Point> contour: contours) {
-		approxPolyDP(contour, approx, 0.01 * arcLength(contour, true), true);
-		if (rectonly && approx.size() != 4) continue;
+		if (rectonly) {
+			approxPolyDP(contour, approx, 0.01 * arcLength(contour, true), true);
+			if (approx.size() != 4) continue;
+		}
 		contarea = contourArea(contour);
 		if (contarea < minarea) continue;
 
-		tmp_contours.clear();
 		tmp_contours.push_back(contour);
-		drawContours(mask, tmp_contours, 0, color, -1);
 	}
+	drawContours(mask, tmp_contours, -1, color, -1);
+	tmp_contours.clear();
 }
 
 // Interface for Avisynth and other c-programs that have no OpenCV knowledge
