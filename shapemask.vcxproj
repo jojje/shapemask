@@ -192,7 +192,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="avisynth.h" />
+    <ClInclude Include="avisynth\avisynth.h" />
     <ClInclude Include="cv\include\opencv2\core.hpp" />
     <ClInclude Include="cv\include\opencv2\cvconfig.h" />
     <ClInclude Include="cv\include\opencv2\hal.hpp" />

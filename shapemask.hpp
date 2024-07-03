@@ -25,7 +25,7 @@
 
 #include "avisynth/avisynth.h"
 
-#define VERSION "1.0.1"
+#define VERSION "1.0.2"
 
 class ShapeMask : public GenericVideoFilter {
 	int   threshold;          // The luma threshold (0-255) above which pixels must be to be considered members of a shape candidate.
@@ -41,6 +41,15 @@ AVSValue __cdecl Create_ShapeMask(AVSValue args, void* user_data, IScriptEnviron
 
 // shapemask(clip, threshold = 127, minarea = 0.02, rectonly = true)
 extern "C" __declspec(dllexport) const char* __stdcall AvisynthPluginInit2(IScriptEnvironment* env) {
+	env->AddFunction("ShapeMask", "c[THRESH]i[MINAREA]f[RECTONLY]b", Create_ShapeMask, 0);
+	return "'ShapeMask' plugin v" VERSION ", author: tinjon[at]gmail.com";
+}
+
+
+// for 64bit AVSP
+const AVS_Linkage* AVS_linkage = 0;  // new requirement for avisynth+ apparently see: https://github.com/AviSynth/AviSynthPlus/blob/v3.7.2/plugins/ConvertStacked/ConvertStacked.cpp#L360
+extern "C" __declspec(dllexport) const char* __stdcall AvisynthPluginInit3(IScriptEnvironment* env, const AVS_Linkage* const vectors) {
+	AVS_linkage = vectors;
 	env->AddFunction("ShapeMask", "c[THRESH]i[MINAREA]f[RECTONLY]b", Create_ShapeMask, 0);
 	return "'ShapeMask' plugin v" VERSION ", author: tinjon[at]gmail.com";
 }

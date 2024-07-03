@@ -43,9 +43,6 @@
     <ClInclude Include="frame_process.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="avisynth.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="cv\include\opencv2\imgproc\imgproc_c.h">
       <Filter>cv\include\opencv2\imgproc</Filter>
     </ClInclude>
@@ -74,6 +71,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="avisynth\avisynth.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,6 +1,6 @@
 1 VERSIONINFO
-FILEVERSION 1,0,1,0
-PRODUCTVERSION 1,0,1,0
+FILEVERSION 1,0,2,0
+PRODUCTVERSION 1,0,2,0
 FILEFLAGSMASK 0x17L
 #ifdef _DEBUG
   FILEFLAGS 0x1L
@@ -18,8 +18,8 @@ BEGIN
 			VALUE "ProductName",      "ShapeMask"
 			VALUE "OriginalFilename", "ShapeMask.dll"
 			VALUE "FileDescription",  "AviSynth plugin to darken bright areas" 
-			VALUE "FileVersion",      "1.0"
-			VALUE "ProductVersion",   "1.0"
+			VALUE "FileVersion",      "1.0.2"
+			VALUE "ProductVersion",   "1.0.2"
 			VALUE "InternalName",     "peekaboo"
 			VALUE "LegalCopyright",   "Copyright © 2015 Jonas Tingeborn"
 		END
